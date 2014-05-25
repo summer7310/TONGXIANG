@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes name="PdEwPtWell" geoName="GeoCivilEngineering" type="1020101" geotype="1" zIndex="30" xOffset="0" yOffset="15">
+	<name location="0">工井名称</name>
+	<!--<property name="name" type="java.lang.String" notNull="true" notnull="true">
+		<list location="0">工井名称</list>
+	</property>-->
+	<!--<property name="rfid" type="java.lang.Integer" notNull="true">
+		<list location="1">RFID</list>
+	</property>-->
+	<!-- <property name="staticId" type="java.lang.String">
+		<list location="2">静态ID</list>
+	</property> -->
+	<!--<property name="locationType" type="java.lang.Integer" notNull="false">
+		<list location="2">所在类型</list>
+	</property>
+	<property name="locationId" type="java.lang.Long" notNull="false">
+		<list location="3">所在ID</list>
+	</property>
+	<property name="serviceStatus" type="java.lang.Integer" notNull="false">
+		<list location="4">运行状态</list>
+	</property>
+	<property name="operatingUnit" type="java.lang.String" notNull="false">
+		<list location="5">运行单位</list>
+	</property>
+	<property name="commissioningDate" type="java.util.Date" notNull="false">
+		<list location="6">投运日期</list>
+	</property>
+	<property name="stationAddress" type="java.lang.String" notNull="false">
+		<list location="7">站址</list>
+	</property>
+	<property name="remark" type="java.lang.String" notNull="false">
+		<list location="8">站址</list>
+	</property>
+	<property name="owner" type="java.lang.String" notNull="false">
+		<list location="9">资产单位</list>
+	</property>-->
+	<property name="longitude" type="java.lang.Double" notNull="true" relateType="none">
+		<list location="1">经度</list>
+	</property>
+	<property name="latitude" type="java.lang.Double" notNull="true" relateType="none">
+		<list location="2">纬度</list>
+	</property>
+	<property name="wellLenth" type="java.lang.Double" notNull="false" relateType="none">
+		<list location="3">井长</list>
+	</property>
+	<property name="wellWidth" type="java.lang.Double" notNull="false" relateType="none">
+		<list location="4">井宽</list>
+	</property>
+	<property name="bottomDepth" type="java.lang.Double" notNull="false" relateType="none">
+		<list location="5">井内深度</list>
+	</property>
+	<property name="topDepth" type="java.lang.Double" notNull="false" relateType="none">
+		<list location="7">上顶埋深</list>
+	</property>
+	<property name="channelCount" type="java.lang.Integer" notNull="false" relateType="none">
+		<list location="12">通道数</list>
+	</property>
+<!-- 	<property name="elevation" type="java.lang.Double" notNull="false">
+		<list location="12">高程</list>
+	</property> -->
+	<!-- <property name="attachmentId" type="java.lang.Integer" notNull="false">
+		<list location="13">竣工资料附件</list>
+	</property>
+	<property name="runCode" type="java.lang.String" notNull="false">
+		<list location="14">运行编号</list>
+	</property>
+	<property name="belongsCableline" type="java.lang.Long"  notNull="true">
+		<list location="15">所属配电线路></list>
+	</property>
+	<property name="groundResistance" type="java.lang.Double"  notNull="false">
+		<list location="16">接地电阻</list>
+	</property>
+	<property name="assetCode" type="java.lang.String"  notNull="false">
+		<list location="17">资产编号</list>
+	</property>
+	<property name="manufacturer" type="java.lang.String" notNull="false">
+		<list location="18">生产厂家</list>
+	</property>
+	<property name="model" type="java.lang.String" notNull="false">
+		<list location="19">型号</list>
+	</property> -->
+</classes>

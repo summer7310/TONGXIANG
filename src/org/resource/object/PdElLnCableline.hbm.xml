@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdElLnCableline"
+  schema="property" table="pd_el_ln_cableline">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="runCode" type="string">
+   <column name="run_code"/>
+  </property>
+  <property generated="never" lazy="false" name="operatingUnit" type="string">
+   <column name="operating_unit"/>
+  </property>
+  <property generated="never" lazy="false" name="voltageGrade" type="java.lang.Integer">
+   <column name="voltage_grade"/>
+  </property>
+  <property generated="never" lazy="false" name="switchCode" type="string">
+   <column name="switch_code"/>
+  </property>
+  <property generated="never" lazy="false" name="startTransStation" type="java.lang.Long">
+   <column name="start_trans_station"/>
+  </property>
+  <property generated="never" lazy="false" name="commissioningDate" type="date">
+   <column length="13" name="commissioning_date"/>
+  </property>
+  <property generated="never" lazy="false" name="cablelineProperties" type="java.lang.Integer">
+   <column name="cableline_properties"/>
+  </property>
+  <property generated="never" lazy="false" name="cablelineType" type="java.lang.Integer">
+   <column name="cableline_type"/>
+  </property>
+  <property generated="never" lazy="false" name="cablelineLength" type="java.lang.Integer">
+   <column name="cableline_length"/>
+  </property>
+  <property generated="never" lazy="false" name="aerialcableLength" type="java.lang.Integer">
+   <column name="aerialcable_length"/>
+  </property>
+  <property generated="never" lazy="false" name="undergroundcableLength" type="java.lang.Integer">
+   <column name="undergroundcable_length"/>
+  </property>
+  <property generated="never" lazy="false" name="builder" type="string">
+   <column name="builder"/>
+  </property>
+  <property generated="never" lazy="false" name="owner" type="string">
+   <column name="owner"/>
+  </property>
+  <property generated="never" lazy="false" name="assetCode" type="string">
+   <column name="asset_code"/>
+  </property>
+  <property generated="never" lazy="false" name="remark" type="string">
+   <column name="remark"/>
+  </property>
+  <property generated="never" lazy="false" name="serviceStatus" type="java.lang.Integer">
+   <column name="service_status"/>
+  </property>
+  <property generated="never" lazy="false" name="attachmentId" type="java.lang.Integer">
+   <column name="attachment_id"/>
+  </property>
+ </class>
+</hibernate-mapping>

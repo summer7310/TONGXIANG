@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="org.resource.objectclass.PdWirecablToPipeSegment" table="pd_wirecabl_to_pipe_segment" schema="property">
+        <composite-id name="id" class="org.resource.objectclass.PdWirecablToPipeSegmentId">
+            <key-property name="segmentHaveWirecable" type="java.lang.Long">
+                <column name="segment_have_wirecable" />
+            </key-property>
+            <key-property name="wirecableBelongsSegment" type="java.lang.Long">
+                <column name="wirecable_belongs_segment" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

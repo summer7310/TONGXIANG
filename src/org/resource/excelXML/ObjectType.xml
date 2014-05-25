@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttype>
+	<type name="分支接头">
+		<typeid>1010206</typeid>
+		<code>PdElCnBranch</code>
+	</type>
+	<type name="变电站">
+		<typeid>1010201</typeid>
+		<code>PdElCnTransformersubstation</code>
+	</type>
+	<type name="开关站">
+		<typeid>1010202</typeid>
+		<code>PdElCnSwitchStation</code>
+	</type>
+	<type name="变压器">
+		<typeid>1010203</typeid>
+		<code>PdElCnTransformer</code>
+	</type>
+	<type name="环网柜">
+		<typeid>1010204</typeid>
+		<code>PdElCnRingmainunit</code>
+	</type>
+	<type name="分支箱">
+		<typeid>1010205</typeid>
+		<code>PdElCnBranchBox</code>
+	</type>
+	<type name="线缆段_V">
+		<typeid>1010401</typeid>
+		<code>PdElLnWirecableSegmengV</code>
+	</type>
+	<type name="电缆段">
+		<typeid>1010402</typeid>
+		<code>PdElCnCableSegment</code>
+	</type>
+	<type name="导线段">
+		<typeid>1010403</typeid>
+		<code>PdElCnWireSegmet</code>
+	</type>
+	<type name="间隔">
+		<typeid>1010601</typeid>
+		<code>PdElLnIntermission</code>
+	</type>
+	<type name="虚拟间隔">
+		<typeid>1010602</typeid>
+		<code>PdElLnIntermission</code>
+	</type>
+	<type name="配电线路">
+		<typeid>1010301</typeid>
+		<code>PdElLnCableline</code>
+	</type>
+	<type name="点状建筑">
+		<typeid>1020100</typeid>
+		<code>PdEwPointBuilding</code>
+	</type>
+	<type name="工井">
+		<typeid>1020101</typeid>
+		<code>PdEwPtWell</code>
+	</type>
+	<type name="杆塔">
+		<typeid>1020102</typeid>
+		<code>PdEwPtTower</code>
+	</type>
+	<type name="虚拟工井">
+		<typeid>1020103</typeid>
+		<code>PdEwPtWell</code>
+	</type>
+	<type name="管沟线_V">
+		<typeid>1020200</typeid>
+		<code>PdEwPipeLineV</code>
+	</type>
+	<type name="管沟段_V">
+		<typeid>1020201</typeid>
+		<code>PdEwPpSegmentV</code>
+	</type>
+	<type name="电缆管沟_V">
+		<typeid>1020202</typeid>
+		<code>PdEwPpCablePipeV</code>
+	</type>
+	<type name="虚拟管沟">
+		<typeid>1020203</typeid>
+		<code>PdEwPpVirtualPipe</code>
+	</type>
+	<type name="排管">
+		<typeid>1020211</typeid>
+		<code>PdEwPpRackPipe</code>
+	</type>
+	<type name="桥架">
+		<typeid>1020212</typeid>
+		<code>PdEwPpBridge</code>
+	</type>
+	<type name="沟道">
+		<typeid>1020213</typeid>
+		<code>PdEwPpChannel</code>
+	</type>
+	<type name="直埋">
+		<typeid>1020214</typeid>
+		<code>PdEwPpBuried</code>
+	</type>
+	<type name="隧道">
+		<typeid>1020215</typeid>
+		<code>PdEwPpTunnel</code>
+	</type>
+	<type name="顶管">
+		<typeid>1020216</typeid>
+		<code>PdEwPpJacking</code>
+	</type>
+	<type name="剖面">
+		<typeid>1010501</typeid>
+		<code>PdPipeProfile</code>
+	</type>
+	<type name="管孔">
+		<typeid>1010502</typeid>
+		<code>PdPipeHole</code>
+	</type>
+		<type name="支架">
+		<typeid>1010503</typeid>
+		<code>PdBracket</code>
+	</type>
+	<type name="城区">
+		<typeid>1030101</typeid>
+		<code>PdCity</code>
+	</type>
+	<type name="附件">
+		<typeid>1030200</typeid>
+		<code>PdAuxiliary</code>
+	</type>
+	<type name="道路">
+		<typeId>1020301</typeId>
+		<code>PdEwRoad</code>
+	</type>
+	<type name="盘余">
+		<typeId>1010207</typeId>
+		<code>PdElCnCabledrumRemainder</code>
+	</type>
+	<type name="中间接头">
+		<typeId>1010208</typeId>
+		<code>PdElCnIntermediateJoint</code>
+	</type>
+	<type name="测绘">
+		<typeId>1030110</typeId>
+		<code>GeoPointSurvery</code>
+	</type>
+</objecttype>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 26, 2013 9:51:21 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class dynamic-insert="true" dynamic-update="true" name="org.resource.objectclass.PdPhoto" table="pd_photo" schema="property">
+        <id name="autoId" type="int">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="rfid" type="java.lang.Integer">
+            <column name="rfid" />
+        </property>
+        <property name="staticId" type="java.lang.Long">
+            <column name="static_id" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="objectType" type="java.lang.Integer">
+            <column name="object_type" />
+        </property>
+        <property name="photoPath" type="java.lang.String">
+            <column name="photo_path" />
+        </property>
+        <property name="previewPhotoPath" type="java.lang.String">
+            <column name="preview_photo_path" />
+        </property>
+        <property name="hostId" type="java.lang.Long">
+            <column name="host_id" />
+        </property>
+    </class>
+</hibernate-mapping>

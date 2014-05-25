@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 24, 2013 5:44:15 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.resource.objectclass.PdElCnCabledrumRemainder" table="pd_el_cn_cabledrum_remainder" schema="property">
+        <id name="autoId" type="int">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="rfid" type="java.lang.Integer">
+            <column name="rfid" />
+        </property>
+        <property name="staticId" type="java.lang.Long">
+            <column name="static_id" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="objectType" type="java.lang.Integer">
+            <column name="object_type" />
+        </property>
+        <property name="locationType" type="java.lang.Integer">
+            <column name="location_type" />
+        </property>
+        <property name="locationId" type="java.lang.Long">
+            <column name="location_id" />
+        </property>
+        <property name="serviceStatus" type="java.lang.Integer">
+            <column name="service_status" />
+        </property>
+        <property name="operatingUnit" type="java.lang.String">
+            <column name="operating_unit" />
+        </property>
+        <property name="commissioningDate" type="java.util.Date">
+            <column name="commissioning_date" />
+        </property>
+        <property name="stationAddress" type="java.lang.String">
+            <column name="station_address" />
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="owner" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="longitude" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="latitude" />
+        </property>
+        <property name="elevation" type="java.lang.Double">
+            <column name="elevation" />
+        </property>
+        <property name="wiringDiagramId" type="java.lang.Integer">
+            <column name="wiring_diagram_id" />
+        </property>
+        <property name="attachmentId" type="java.lang.Integer">
+            <column name="attachment_id" />
+        </property>
+        <property name="runCode" type="java.lang.String">
+            <column name="run_code" />
+        </property>
+        <property name="belongsCableline" type="java.lang.Long">
+            <column name="belongs_cableline" />
+        </property>
+        <property name="groundResistance" type="java.lang.Double">
+            <column name="ground_resistance" />
+        </property>
+        <property name="assetCode" type="java.lang.String">
+            <column name="asset_code" />
+        </property>
+        <property name="remainderLength" type="java.lang.Integer">
+        	<column name="remainder_length"></column>
+        </property>
+        <property name="belongsWirecableSegmeng" type="java.lang.Long">
+            <column name="belongs_wirecable_segmeng" />
+        </property>
+    </class>
+</hibernate-mapping>

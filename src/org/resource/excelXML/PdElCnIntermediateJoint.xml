@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes name="PdElCnIntermediateJoint" geoName="GeoElectrical" type="1010208" geotype="1" zIndex="30" xOffset="0" yOffset="-15">
+	<name location="0">接头名称</name>
+	<!--<property name="name" type="java.lang.String" notNull="true" notnull="true">
+		<list location="0">接头名称</list>
+	</property>-->
+	<property name="longitude" type="java.lang.Double" notNull="true" relateType="none">
+		<list location="1">经度</list>
+	</property>
+	<property name="latitude" type="java.lang.Double" notNull="true" relateType="none">
+		<list location="2">纬度</list>
+	</property>
+	<property name="locationType" type="java.lang.Integer" notNull="false" relateType="map">
+		<list location="4">安装位置类型</list>
+		<map name="ObjectTypeMap"/>
+	</property>
+	<property name="locationId" type="java.lang.Integer" notNull="false" relateType="class">
+		<list location="3">安装位置</list>
+	</property>
+</classes>

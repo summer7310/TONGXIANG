@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 10, 2014 2:34:38 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.resource.objectclass.PdContainerToCableline" table="pd_container_to_cableline" schema="property">
+        <composite-id name="id" class="org.resource.objectclass.PdContainerToCablelineId">
+        	<key-property name="containerBelongsCableline" type="java.lang.Long">
+        		<column name="container_belongs_cableline"/>
+        	</key-property>
+        	<key-property name="containerToCableline" type="java.lang.Long">
+        		<column name="container_to_cableline"></column>
+        	</key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

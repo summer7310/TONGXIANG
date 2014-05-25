@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2013 1:06:52 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class dynamic-insert="true" dynamic-update="true" name="org.resource.objectclass.GeoCivilEngineering" schema="gdbo" table="geo_civil_engineering">
+        <id name="autoId" type="int">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="rfid" type="java.lang.Integer">
+            <column name="rfid" />
+        </property>
+        <property name="geometryData" type="org.hibernate.spatial.GeometryType">
+            <column name="geometry_data" />
+        </property>
+        <property name="staticId" type="java.lang.Long">
+            <column name="static_id" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="objectType" type="java.lang.Integer">
+            <column name="object_type" />
+        </property>
+        <property name="isbn" type="java.lang.Integer">
+            <column name="isbn" />
+        </property>
+        <property name="ZIndex" type="java.lang.Integer">
+            <column name="z_index" />
+        </property>
+        <property name="XOffset" type="java.lang.Integer">
+        	<column name="x_offset"></column>
+        </property>
+                <property name="YOffset" type="java.lang.Integer">
+        	<column name="y_offset"></column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=GB2312" />
+	<script src="js/jquery-1.10.1.min.js"></script>	
+</head>
+<body>
+<h1>title</h1>
+<input id="title" type="text">
+<h1>source</h1>
+<textarea rows="10" cols="160" id="s"></textarea>
+<h1>code</h1>
+<textarea rows="10" cols="160" id="c"></textarea>
+<br/>
+<input id="t" type="button" value="translate"/>
+<div style="width:900px;" id="box"></div>
+<script>
+var tmp = '<%@ page language="java" contentType="text/html; charset=UTF-8"\n'
+   		+ 'pageEncoding="UTF-8"%>\n'
+		+ '<%@ taglib prefix="s" uri="/struts-tags" %>\n'
+		+ '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n'
+		+ '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\n'
+		
+var k1 = '	';
+var k2 = '		';
+var k3 = '			';  		
+var tmp2 = '<body>\n<div class="property">\n'+k1+'<table class="Tinput_list">\n'+k2+'<tr><th colspan="2">BASEINFO</th></tr>\n';
+var ifupdate = k3+'<s:if test="result.autoId != null"><s:hidden theme="simple" name="OBJ.autoId" value="%{result.autoId}"/></s:if>\n'
+
+
+$('#t').click(function(){
+	var s = $('#s').val();
+	var c = $('#c').val();
+	
+	var res = s.split('\n');
+	var res2 ={};
+	var res3 = "";
+	//数据解析，返回res2
+	/*
+	{
+		
+		key:{
+			code,
+			type
+		}
+	}
+*/
+	for(i=0; i<res.length; i=i+10){
+		//res2 += i+ ": "+res[i] + '\n';
+		var code = res[i+2].toLowerCase().split('_');
+		var codee = "";
+		for(n=0; n<code.length; n++){
+			if(n==0){
+				codee += code[n];
+				continue;
+			}
+			var codeee ="";
+			for(m =0; m<code[n].length; m++){
+				if(m==0){
+					codeee += code[n][m].toUpperCase();
+					continue;
+				}
+				codeee += code[n][m];
+			}
+			codee += codeee;
+			
+		}
+		if(res[i+4]=="Number" || res[i+4]=="Date" || res[i+4]=="Float" || res[i+4]=="Boolean"){
+			res2[res[i]] = {'code': codee, 'type': res[i+4].toLowerCase()};
+		} else {
+			res2[res[i]] = {'code': codee, 'type': "str"};
+		}
+	}
+	var x =0;
+	//数据生成，返回res3
+	for(key in res2){
+		
+		var textbox="";
+		if(res2[key]['type'] == 'number'){
+			textbox = k3 + '<select name="LDW.' + res2[key]['code'] + '">\n'
+					+ k3+'<option value ="0" <s:if test="result.' + res2[key]['code'] + '==0">selected</s:if>>' + key + '0</option>\n'
+					+ k3+'<option value ="1" <s:if test="result.' + res2[key]['code'] + '==1">selected</s:if>>' + key + '1</option>\n'
+					+ k3+ '<option value ="2" <s:if test="result.' + res2[key]['code'] + '==2">selected</s:if>>' + key + '2</option>\n'
+					+ k3+ '</select>'
+		} else if(res2[key]['type'] == 'boolean'){
+			textbox = k3+ '<select name="LDW.' + res2[key]['code'] + '">\n'
+					+ k3+ '<option value =true <s:if test="result.' + res2[key]['code'] + '==0">selected</s:if>>是</option>\n'
+					+ k3+ '<option value =false <s:if test="result.' + res2[key]['code'] + '==1">selected</s:if>>否</option>\n'
+					+ k3+ '</select>'
+		} else {
+			textbox = '<s:textfield theme="simple" name="LDW.'+res2[key]['code']+'" cssClass="'+res2[key]['type']+' i290" value="%{result.'+res2[key]['code']+'}"/>';
+		}
+		
+		
+		
+		if(x==0 || x%2==0){
+			res3 += k2;
+			res3 += '<tr>\n';
+		}
+		
+				
+		if(x == 0){
+			res3 =res3+ k3 + '<td width="80px">' + key +'</td>\n'+k3+'<td width="340px">'
+					+ textbox
+					+'</td>\n';
+		}
+		else if(x == 1){
+			res3 = res3+ k3+'<td width="80px">' + key + '</td>\n'+k3+'<td width="300px">'
+			+ textbox
+			+ '</td>\n';
+		}
+		else{
+				res3 = res3+k3+ '<td>' + key + '</td>\n'+k3+'<td>'
+				+ textbox
+				+ '</td>\n';
+		}
+		
+		if(x==1 || x%2==1){
+			res3 += k2;
+			res3 += '</tr>\n';
+		}
+		//alert(res3);
+		x++;
+	}
+	
+	res3 = tmp + '<title>'+$('#title').val()+'</title>\n</head>\n' + tmp2.replace('BASEINFO', $('#title').val()+"的属性")+ifupdate + res3 + '</table>\n</div>\n'
+			+ '<script type="text/javascript">Plugins.check.form();<\/script>\n<\/body>\n</html>';
+	
+	$('#c').val(res3);
+	$('#box').html(res3);
+})
+</script>
+<div style="display:none" id="tmp">
+
+</div>
+</body>
+</html>

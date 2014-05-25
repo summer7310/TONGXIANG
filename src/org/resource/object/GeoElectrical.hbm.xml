@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class dynamic-insert="true" dynamic-update="true"
+  name="org.resource.objectclass.GeoElectrical" schema="gdbo" table="geo_electrical">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="geometryData" type="org.hibernate.spatial.GeometryType">
+   <column name="geometry_data"/>
+  </property>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="isbn" type="java.lang.Integer">
+   <column name="isbn"/>
+  </property>
+  <!-- <property generated="never" lazy="false" name="belongsCableline" type="java.lang.Long">
+   <column name="belongs_cableline"/>
+  </property>
+  <property generated="never" lazy="false" name="startTransStation" type="java.lang.Long">
+   <column name="start_trans_station"/>
+  </property> -->
+  <property name="ZIndex" type="java.lang.Integer">
+  	<column name="z_index"/>
+  </property>
+  <property name="XOffset" type="java.lang.Integer">
+    <column name="x_offset"></column>
+  </property>
+  <property name="YOffset" type="java.lang.Integer">
+    <column name="y_offset"></column>
+  </property>
+ </class>
+</hibernate-mapping>

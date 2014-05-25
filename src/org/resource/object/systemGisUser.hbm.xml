@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="org.resource.objectclass.systemGisUser" table="gis_user" schema="system">
+        <id name="autoId" type="int">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="user_name" />
+        </property>
+        <property name="userPassword" type="string">
+            <column name="user_password" />
+        </property>
+        <property name="userLevel" type="java.lang.Integer">
+            <column name="user_level" />
+        </property>
+        <property name="userRealName" type="string">
+            <column name="user_real_name" />
+        </property>
+        <property name="userEmail" type="string">
+            <column name="user_email" />
+        </property>
+        <property name="userMobile" type="string">
+            <column name="user_mobile" />
+        </property>
+        <property name="userAddDate" type="date">
+            <column name="user_add_date" />
+        </property>
+    </class>
+</hibernate-mapping>

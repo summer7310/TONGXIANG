@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<!-- Created by SVGDeveloper 1.0 -->
+<svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle cx="25" cy="25" r="24" style="stroke-width:2" fill="#FFCC00" stroke="#CC3300"  xmlns="http://www.w3.org/2000/svg" />
+
+<path d="M8 16 L17 16 L17 24 L8 24 L17 24 L17 33 L8 33" stroke="#CC3300" fill="none" stroke-width="2" xmlns="http://www.w3.org/2000/svg" />
+<path d="M20 16 L29 16 L29 24 L20 24 L29 24 L29 33 L20 33" stroke="#CC3300" fill="none" stroke-width="2" xmlns="http://www.w3.org/2000/svg" />
+<path d="M32 16 L41 16 L41 33 L33 33 L33 16" stroke="#CC3300" fill="none" stroke-width="2" xmlns="http://www.w3.org/2000/svg" />
+</svg>

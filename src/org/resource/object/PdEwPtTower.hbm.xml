@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdEwPtTower" schema="property" table="pd_ew_pt_tower">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="builder" type="string">
+   <column name="builder"/>
+  </property>
+  <property generated="never" lazy="false" name="assetCode" type="string">
+   <column name="asset_code"/>
+  </property>
+  <property generated="never" lazy="false" name="longitude" type="java.lang.Double">
+   <column name="longitude" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="latitude" type="java.lang.Double">
+   <column name="latitude" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="elevation" type="java.lang.Double">
+   <column name="elevation" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="owner" type="string">
+   <column name="owner"/>
+  </property>
+  <property generated="never" lazy="false" name="belongsRoad" type="java.lang.Long">
+   <column name="belongs_road"/>
+  </property>
+  <property generated="never" lazy="false" name="voltageGrade" type="java.lang.Integer">
+   <column name="voltage_grade"/>
+  </property>
+  <property generated="never" lazy="false" name="attachmentId" type="java.lang.Integer">
+   <column name="attachment_id"/>
+  </property>
+  <property generated="never" lazy="false" name="remark" type="string">
+   <column name="remark"/>
+  </property>
+  <property generated="never" lazy="false" name="towerCode" type="string">
+   <column name="tower_code"/>
+  </property>
+  <property generated="never" lazy="false" name="belongsCableline" type="java.lang.Long">
+   <column name="belongs_cableline"/>
+  </property>
+  <property generated="never" lazy="false" name="towerModel" type="string">
+   <column name="tower_model"/>
+  </property>
+  <property generated="never" lazy="false" name="manufacturer" type="string">
+   <column name="manufacturer"/>
+  </property>
+  <property generated="never" lazy="false" name="commissioningDate" type="date">
+   <column length="13" name="commissioning_date"/>
+  </property>
+  <property generated="never" lazy="false" name="towerProperties" type="java.lang.Integer">
+   <column name="tower_properties"/>
+  </property>
+  <property generated="never" lazy="false" name="towerMaterial" type="java.lang.Integer">
+   <column name="tower_material"/>
+  </property>
+  <property generated="never" lazy="false" name="height" type="java.lang.Integer">
+   <column name="height"/>
+  </property>
+  <property generated="never" lazy="false" name="span" type="java.lang.Integer">
+   <column name="span"/>
+  </property>
+  <property generated="never" lazy="false" name="highLowPressure" type="java.lang.Boolean">
+   <column name="high_low_pressure"/>
+  </property>
+  <property generated="never" lazy="false" name="circuitCount" type="java.lang.Integer">
+   <column name="circuit_count"/>
+  </property>
+  <property generated="never" lazy="false" name="baseType" type="string">
+   <column name="base_type"/>
+  </property>
+  <property generated="never" lazy="false" name="cableCount" type="java.lang.Integer">
+   <column name="cable_count"/>
+  </property>
+  <property generated="never" lazy="false" name="groundResistance" type="java.lang.Double">
+   <column name="ground_resistance" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="serviceStatus" type="java.lang.Integer">
+   <column name="service_status"/>
+  </property>
+  <property generated="never" lazy="false" name="depth" type="java.lang.Integer">
+   <column name="depth"/>
+  </property>
+  <property generated="never" lazy="false" name="manufactureCode" type="string">
+   <column name="manufacture_code"/>
+  </property>
+  <property generated="never" lazy="false" name="hasLamp" type="java.lang.Boolean">
+   <column name="has_lamp"/>
+  </property>
+  <property generated="never" lazy="false" name="hasCommunication" type="java.lang.Boolean">
+   <column name="has_communication"/>
+  </property>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes name="PdElCnBranch" type="1010206" geotype="1" zIndex="3">
+	<property name="name" type="java.lang.String" isgeodata="true">
+		<list location="0">名称</list>
+	</property>
+	<property name="rfid" type="java.lang.Integer" isgeodata="true">
+		<list location="1">RFID</list>
+	</property>
+	<!-- <property name="staticId" type="java.lang.String">
+		<list location="2">静态ID</list>
+	</property> -->
+	<property name="locationType" type="java.lang.Integer" isgeodata="false">
+		<list location="2">所在类型</list>
+	</property>
+	<property name="locationId" type="java.lang.Long" isgeodata="false">
+		<list location="3">所在ID</list>
+	</property>
+	<property name="serviceStatus" type="java.lang.Integer" isgeodata="false">
+		<list location="4">运行状态</list>
+	</property>
+	<property name="operatingUnit" type="java.lang.String" isgeodata="false">
+		<list location="5">运行单位</list>
+	</property>
+	<property name="commissioningDate" type="java.util.Date" isgeodata="false">
+		<list location="6">投运日期</list>
+	</property>
+	<property name="stationAddress" type="java.lang.String" isgeodata="false">
+		<list location="7">站址</list>
+	</property>
+	<property name="remark" type="java.lang.String" isgeodata="false">
+		<list location="8">站址</list>
+	</property>
+	<property name="owner" type="java.lang.String" isgeodata="false">
+		<list location="9">资产单位</list>
+	</property>
+	<property name="longitude" type="java.lang.Double" isgeodata="false">
+		<list location="10">经度</list>
+	</property>
+	<property name="latitude" type="java.lang.Double" isgeodata="false">
+		<list location="11">纬度</list>
+	</property>
+	<property name="elevation" type="java.lang.Double" isgeodata="false">
+		<list location="12">高程</list>
+	</property>
+	<property name="attachmentId" type="java.lang.Integer" isgeodata="false">
+		<list location="13">竣工资料附件</list>
+	</property>
+	<property name="runCode" type="java.lang.String" isgeodata="false">
+		<list location="14">运行编号</list>
+	</property>
+	<property name="belongsCableline" type="java.lang.Long"  isgeodata="true">
+		<list location="15">所属配电线路></list>
+	</property>
+	<property name="groundResistance" type="java.lang.Double"  isgeodata="false">
+		<list location="16">接地电阻</list>
+	</property>
+	<property name="assetCode" type="java.lang.String"  isgeodata="false">
+		<list location="17">资产编号</list>
+	</property>
+	<property name="manufacturer" type="java.lang.String" isgeodata="false">
+		<list location="18">生产厂家</list>
+	</property>
+	<property name="model" type="java.lang.String" isgeodata="false">
+		<list location="19">型号</list>
+	</property>
+</classes>
