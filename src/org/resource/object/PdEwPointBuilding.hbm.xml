@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdEwPointBuilding"
+  schema="property" table="pd_ew_point_building">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="builder" type="string">
+   <column name="builder"/>
+  </property>
+  <property generated="never" lazy="false" name="assetCode" type="string">
+   <column name="asset_code"/>
+  </property>
+  <property generated="never" lazy="false" name="longitude" type="java.lang.Double">
+   <column name="longitude" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="latitude" type="java.lang.Double">
+   <column name="latitude" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="elevation" type="java.lang.Double">
+   <column name="elevation" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="owner" type="string">
+   <column name="owner"/>
+  </property>
+  <property generated="never" lazy="false" name="belongsRoad" type="java.lang.Long">
+   <column name="belongs_road"/>
+  </property>
+  <property generated="never" lazy="false" name="voltageGrade" type="java.lang.Integer">
+   <column name="voltage_grade"/>
+  </property>
+  <property generated="never" lazy="false" name="attachmentId" type="java.lang.Integer">
+   <column name="attachment_id"/>
+  </property>
+  <property generated="never" lazy="false" name="remark" type="string">
+   <column name="remark"/>
+  </property>
+ </class>
+</hibernate-mapping>

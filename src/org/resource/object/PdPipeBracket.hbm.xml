@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 2, 2013 3:33:29 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class dynamic-insert="true" dynamic-update="true"
+  name="org.resource.objectclass.PdPipeBracket" schema="property" table="pd_pipe_bracket">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="java.lang.String">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="wellId" type="java.lang.Long">
+   <column name="well_id"/>
+  </property>
+  <property generated="never" lazy="false" name="mirrorWellId" type="java.lang.Long">
+   <column name="mirror_well_id"/>
+  </property>
+  <property generated="never" lazy="false" name="bracketInterval" type="java.lang.Integer">
+   <column name="bracket_interval"/>
+  </property>
+  <property generated="never" lazy="false" name="bracketModel" type="java.lang.String">
+   <column name="bracket_model"/>
+  </property>
+  <property generated="never" lazy="false" name="Builder" type="java.lang.String">
+   <column name="builder"/>
+  </property>
+  <property generated="never" lazy="false" name="belongsPpSegment" type="java.lang.Long">
+   <column name="belongs_pp_segment"/>
+  </property>
+  <property generated="never" lazy="false" name="numbers" type="java.lang.Integer">
+   <column name="numbers"/>
+  </property>
+ </class>
+</hibernate-mapping>

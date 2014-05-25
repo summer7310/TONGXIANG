@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdEwPpCablePipeV"
+  schema="property" table="pd_ew_pp_cable_pipe_v">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="startBuilding" type="java.lang.Long">
+   <column name="start_building"/>
+  </property>
+  <property generated="never" lazy="false" name="startBuildingType" type="java.lang.Integer">
+   <column name="start_building_type"/>
+  </property>
+  <property generated="never" lazy="false" name="endBuilding" type="java.lang.Long">
+   <column name="end_building"/>
+  </property>
+  <property generated="never" lazy="false" name="endBuildingType" type="java.lang.Integer">
+   <column name="end_building_type"/>
+  </property>
+  <property generated="never" lazy="false" name="sectionId" type="java.lang.Integer">
+   <column name="section_id"/>
+  </property>
+  <property generated="never" lazy="false" name="lineBelongId" type="java.lang.Long">
+   <column name="line_belong_id"/>
+  </property>
+  <property generated="never" lazy="false" name="segmentCode" type="string">
+   <column name="segment_code"/>
+  </property>
+  <property generated="never" lazy="false" name="operatingUnit" type="string">
+   <column name="operating_unit"/>
+  </property>
+  <property generated="never" lazy="false" name="location" type="string">
+   <column name="location"/>
+  </property>
+  <property generated="never" lazy="false" name="archiveName" type="string">
+   <column name="archive_name"/>
+  </property>
+  <property generated="never" lazy="false" name="builder" type="string">
+   <column name="builder"/>
+  </property>
+  <property generated="never" lazy="false" name="completionDate" type="date">
+   <column length="13" name="completion_date"/>
+  </property>
+  <property generated="never" lazy="false" name="drawingNumber" type="string">
+   <column name="drawing_number"/>
+  </property>
+  <property generated="never" lazy="false" name="remark" type="string">
+   <column name="remark"/>
+  </property>
+  <property generated="never" lazy="false" name="owner" type="string">
+   <column name="owner"/>
+  </property>
+  <property generated="never" lazy="false" name="sectionSizeWidth" type="java.lang.Double">
+   <column name="section_size_width" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="sectionSizeHeight" type="java.lang.Double">
+   <column name="section_size_height" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="attachmentId" type="java.lang.Integer">
+   <column name="attachment_id"/>
+  </property>
+ </class>
+</hibernate-mapping>

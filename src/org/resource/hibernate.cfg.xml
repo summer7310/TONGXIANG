@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+  <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+  <property name="hibernate.connection.password">admin</property>
+  <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/OpengisDataBase</property>
+  <property name="hibernate.connection.username">postgres</property>
+  <property name="hibernate.dialect">org.hibernate.spatial.dialect.postgis.PostgisDialect</property>
+  <property name="hibernate.format_sql">true</property>
+  <property name="hibernate.search.autoregister_listeners">false</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.connection.pool_size">20</property>
+  <property name="hibernate.proxool.pool_alias">pool1</property>
+  <property name="hibernate.max_fetch_depth">1</property>
+  <property name="hibernate.jdbc.batch_versioned_data">true</property>
+  <property name="hibernate.jdbc.use_streams_for_binary">true</property>
+  <property name="hibernate.cache.region_prefix">hibernate.test</property>
+  <property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+  <mapping resource="org/resource/object/PdEwPpBuried.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoPipeProfile.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoElectrical.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoLabel.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElLnIntermission.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwRoad.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElLnWirecableSegmengV.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPtTower.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoPipeHole.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnSwitch.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElLnCableline.hbm.xml"/>
+  <mapping resource="org/resource/object/PdPipeHole.hbm.xml"/>
+  <mapping resource="org/resource/object/PdPipeProfile.hbm.xml"/>
+  <mapping resource="org/resource/object/PdAuxiliary.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPtWell.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPpBridge.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPipeLineV.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPointBuilding.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnSwitchStation.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnTransformer.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoObjectBase.hbm.xml"/>
+  <mapping resource="org/resource/object/PdObjectType.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPpJacking.hbm.xml"/>
+  <mapping resource="org/resource/object/PdObjectBase.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnCableSegment.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnTransformersubstation.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPpRackPipe.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPpCablePipeV.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnWireSegmet.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPpSegmentV.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnBranch.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoPointSurvery.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoConnectLine.hbm.xml"/>
+  <mapping resource="org/resource/object/PdWirecablToPipeSegment.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPpChannel.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoCable.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnRingmainunit.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnBranchBox.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoBase.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPpTunnel.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElPtContainerV.hbm.xml"/>
+  <mapping resource="org/resource/object/PdEwPpVirtualPipe.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoLabeltable.hbm.xml"/>
+  <mapping resource="org/resource/object/PdCity.hbm.xml"/>
+  <mapping resource="org/resource/object/systemGisUser.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnIntermediateJoint.hbm.xml"/>
+  <mapping resource="org/resource/object/PdElCnCabledrumRemainder.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoCivilEngineering.hbm.xml"/>
+  <mapping resource="org/resource/object/PdPipeBracket.hbm.xml"/>
+  <mapping resource="org/resource/object/PdPhoto.hbm.xml"/>
+  <mapping resource="org/resource/object/PdContainerToCableline.hbm.xml"/>
+  <mapping resource="org/resource/object/GeoPipeBracket.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

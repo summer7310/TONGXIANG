@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdPipeHole" schema="property" table="pd_pipe_hole">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="wellId" type="java.lang.Long">
+   <column name="well_id"/>
+  </property>
+  <property generated="never" lazy="false" name="profileId" type="java.lang.Long">
+   <column name="profile_id"/>
+  </property>
+  <property name="mirrorProfileId" type="java.lang.Long">
+  <column name="mirror_profile_id"></column>
+  </property>
+  <property generated="never" lazy="false" name="pipeCode" type="java.lang.String">
+   <column name="pipe_code"/>
+  </property>
+  <property generated="never" lazy="false" name="coordinateX" type="java.lang.Float">
+   <column name="coordinate_x" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="deep" type="java.lang.Float">
+   <column name="deep" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="pipeDiameter" type="java.lang.Float">
+   <column name="pipe_diameter" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="material" type="string">
+   <column name="material"/>
+  </property>
+  <property generated="never" lazy="false" name="wirecableSegmentId" type="java.lang.Long">
+   <column name="wirecable_segment_id"/>
+  </property>
+  <property generated="never" lazy="false" name="isAvailable" type="java.lang.Boolean">
+   <column name="is_available"/>
+  </property>
+  <property generated="never" lazy="false" name="photoId" type="java.lang.Integer">
+   <column name="photo_id"/>
+  </property>
+  <property generated="never" lazy="false" name="ppSegmentId" type="java.lang.Long">
+   <column name="pp_segment_id"/>
+  </property>
+  <property name="mirrorWellId" type="java.lang.Long">
+  <column name="mirror_well_id"></column>
+  </property>
+ </class>
+</hibernate-mapping>

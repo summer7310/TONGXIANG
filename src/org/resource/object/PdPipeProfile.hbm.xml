@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdPipeProfile" schema="property" table="pd_pipe_profile">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="wellId" type="java.lang.Long">
+   <column name="well_id"/>
+  </property>
+  <property name="mirrorWellId" type="java.lang.Long">
+  <column name="mirror_well_id"></column>
+  </property>
+  <property name="mirrorProfileId" type="java.lang.Long">
+  <column name="mirror_profile_id"></column>
+  </property>
+  <property generated="never" lazy="false" name="profileId" type="java.lang.Long">
+   <column name="profile_id"/>
+  </property>
+  <property generated="never" lazy="false" name="profileWidth" type="java.lang.Float">
+   <column name="profile_width" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="profileHigh" type="java.lang.Float">
+   <column name="profile_high" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="pipeNum" type="java.lang.Integer">
+   <column name="pipe_num"/>
+  </property>
+  <property generated="never" lazy="false" name="pipeStartId" type="java.lang.Integer">
+   <column name="pipe_start_id"/>
+  </property>
+  <property generated="never" lazy="false" name="photoId" type="java.lang.Integer">
+   <column name="photo_id"/>
+  </property>
+  <property generated="never" lazy="false" name="startX" type="java.lang.Float">
+   <column name="start_x" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="startY" type="java.lang.Float">
+   <column name="start_y" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="spaceX" type="java.lang.Float">
+   <column name="space_x" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="spaceY" type="java.lang.Float">
+   <column name="space_y" precision="8" scale="8"/>
+  </property>
+  <property generated="never" lazy="false" name="ppSegmentId" type="java.lang.Long">
+   <column name="pp_segment_id"/>
+  </property>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<!-- Created by SVGDeveloper 1.0 -->
+<svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<rect x="2" y="2" width="46" height="46"  style="stroke:#399800;stroke-width:4;" fill="#97D500"/>
+
+<line x1="9" y1="18" x2="41" y2="18"
+style="stroke:#399800;stroke-width:4"/>
+
+<line x1="9" y1="32" x2="41" y2="32"
+style="stroke:#399800;stroke-width:4"/>
+
+<line x1="18" y1="9" x2="18" y2="41"
+style="stroke:#399800;stroke-width:4"/>
+
+<line x1="32" y1="9" x2="32" y2="41"
+style="stroke:#399800;stroke-width:4"/>
+
+
+</svg>

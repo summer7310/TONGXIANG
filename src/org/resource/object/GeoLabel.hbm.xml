@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="org.resource.objectclass.GeoLabel" table="geo_label" schema="gdbo">
+        <id name="autoId" type="int">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="geometryData" type="org.hibernate.spatial.GeometryType">
+            <column name="geometry_data" />
+        </property>
+        <property name="wellId" type="java.lang.Long">
+            <column name="well_id" />
+        </property>
+        <property name="cableName" type="string">
+            <column name="cable_name" />
+        </property>
+        <property name="pipeHoleId" type="java.lang.Long">
+            <column name="pipe_hole_id" />
+        </property>
+        <property name="isAvailable" type="java.lang.Boolean">
+            <column name="is_available" />
+        </property>
+        <property name="color" type="string">
+            <column name="color" length="10" />
+        </property>
+        <property name="ppSegmentId" type="java.lang.Long">
+            <column name="pp_segment_id" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdCity" schema="property" table="pd_city">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId"
+   type="java.lang.Long" unique="true">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <set fetch="select" inverse="true" lazy="true"
+   name="pdElCnTransformersubstations" sort="unsorted" table="pd_el_cn_transformersubstation">
+   <key property-ref="staticId">
+    <column name="belongs_city"/>
+   </key>
+   <one-to-many class="org.resource.objectclass.PdElCnTransformersubstation"/>
+  </set>
+ </class>
+</hibernate-mapping>

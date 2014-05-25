@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdElCnCableSegment"
+  schema="property" table="pd_el_cn_cable_segment">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="voltageGrade" type="java.lang.Integer">
+   <column name="voltage_grade"/>
+  </property>
+  <property generated="never" lazy="false" name="startContainer" type="java.lang.Long">
+   <column name="start_container"/>
+  </property>
+  <property name="startContainerType" type="java.lang.Integer">
+  <column name="start_container_type"></column>
+  </property>
+  <property generated="never" lazy="false" name="endContainer" type="java.lang.Long">
+   <column name="end_container"/>
+  </property>
+  <property name="endContainerType" type="java.lang.Integer">
+  <column name="end_container_type"></column>
+  </property>
+  <property generated="never" lazy="false" name="belongsCableline" type="java.lang.Long">
+   <column name="belongs_cableline"/>
+  </property>
+  <property generated="never" lazy="false" name="wirecableSegmengModel" type="string">
+   <column name="wirecable_segmeng_model"/>
+  </property>
+  <property generated="never" lazy="false" name="manufacturer" type="string">
+   <column name="manufacturer"/>
+  </property>
+  <property generated="never" lazy="false" name="manufacturerDate" type="date">
+   <column length="13" name="manufacturer_date"/>
+  </property>
+  <property generated="never" lazy="false" name="commissioningDate" type="date">
+   <column length="13" name="commissioning_date"/>
+  </property>
+  <property generated="never" lazy="false" name="builder" type="string">
+   <column name="builder"/>
+  </property>
+  <property generated="never" lazy="false" name="assetCode" type="string">
+   <column name="asset_code"/>
+  </property>
+  <property generated="never" lazy="false" name="remark" type="string">
+   <column name="remark"/>
+  </property>
+  <property generated="never" lazy="false" name="serviceStatus" type="java.lang.Integer">
+   <column name="service_status"/>
+  </property>
+  <property generated="never" lazy="false" name="owner" type="string">
+   <column name="owner"/>
+  </property>
+  <property generated="never" lazy="false" name="attachmentId" type="java.lang.Integer">
+   <column name="attachment_id"/>
+  </property>
+  <property generated="never" lazy="false" name="length" type="java.lang.Integer">
+   <column name="length"/>
+  </property>
+  <property generated="never" lazy="false" name="centerTerminalCount" type="java.lang.Integer">
+   <column name="center_terminal_count"/>
+  </property>
+  <property generated="never" lazy="false" name="ratedVoltage" type="java.lang.Double">
+   <column name="rated_voltage" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="section" type="java.lang.Double">
+   <column name="section" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false"
+   name="currentCarryingCapacity" type="java.lang.Double">
+   <column name="current_carrying_capacity" precision="17" scale="17"/>
+  </property>
+  <property generated="never" lazy="false" name="coreMaterial" type="java.lang.Integer">
+   <column name="core_material"/>
+  </property>
+  <property generated="never" lazy="false" name="coresCount" type="java.lang.Integer">
+   <column name="cores_count"/>
+  </property>
+  <property generated="never" lazy="false" name="layingMenthod" type="string">
+   <column name="laying_menthod"/>
+  </property>
+  <property generated="never" lazy="false" name="drawingNumber" type="string">
+   <column name="drawing_number"/>
+  </property>
+ </class>
+</hibernate-mapping>

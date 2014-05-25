@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="org.resource.objectclass.PdObjectType" table="pd_object_type" schema="property">
+        <id name="typeId" type="int">
+            <column name="type_id" />
+            <generator class="identity" />
+        </id>
+        <property name="typeName" type="string">
+            <column name="type_name" />
+        </property>
+        <property name="typeCode" type="string">
+            <column name="type_code" />
+        </property>
+        <property name="upbelongType" type="java.lang.Integer">
+            <column name="upbelong_type" />
+        </property>
+        <property name="downbelongType" type="java.lang.Integer">
+            <column name="downbelong_type" />
+        </property>
+    </class>
+</hibernate-mapping>

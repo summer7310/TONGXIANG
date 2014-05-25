@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2013 2:25:35 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.resource.objectclass.PdElLnIntermission"
+  schema="property" table="pd_el_ln_intermission">
+  <id name="autoId" type="int">
+   <column name="auto_id"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="staticId" type="java.lang.Long">
+   <column name="static_id"/>
+  </property>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="objectType" type="java.lang.Integer">
+   <column name="object_type"/>
+  </property>
+  <property generated="never" lazy="false" name="rfid" type="java.lang.Integer">
+   <column name="rfid"/>
+  </property>
+  <property generated="never" lazy="false" name="containerType" type="java.lang.Integer">
+   <column name="container_type"/>
+  </property>
+  <property generated="never" lazy="false" name="containerId" type="java.lang.Long">
+   <column name="container_id"/>
+  </property>
+  <property generated="never" lazy="false" name="unitCode" type="string">
+   <column name="unit_code"/>
+  </property>
+  <property generated="never" lazy="false" name="unitType" type="java.lang.Integer">
+   <column name="unit_type"/>
+  </property>
+  <property generated="never" lazy="false" name="belongsContainer" type="java.lang.Long">
+   <column name="belongs_container"/>
+  </property>
+  <property generated="never" lazy="false" name="voltagsGrade" type="java.lang.Integer">
+   <column name="voltags_grade"/>
+  </property>
+  <property generated="never" lazy="false" name="commissioningDate" type="date">
+   <column length="13" name="commissioning_date"/>
+  </property>
+  <property generated="never" lazy="false" name="schedulingUnit" type="string">
+   <column name="scheduling_unit"/>
+  </property>
+  <property generated="never" lazy="false" name="belongsWiringDiagram" type="java.lang.Integer">
+   <column name="belongs_wiring_diagram"/>
+  </property>
+ </class>
+</hibernate-mapping>

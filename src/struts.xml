@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+	<constant name="struts.multipart.maxSize" value="20971520" />
+	<!-- 树目录及侧栏配置 -->
+	<package name="tree" extends="struts-default">
+		 
+		<action name="initTree" class="treeAction" method="execute">
+			<result name="error">/wrong.jsp</result>
+		</action>
+		
+		<action name="getSideBarJson" class="getSideBarJson" method="execute">
+			<result name="error">/wrong.jsp</result>
+		</action>
+		
+		<action name="getSideBarJJson" class="getSideBarJJson" method="execute">
+			<result name="error">/wrong.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 地图相关配置 -->
+	<package name="property" extends="struts-default">
+		<interceptors>
+			<interceptor name="loginCheck" class="loginCheck">
+			</interceptor>
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="loginCheck"/>
+				<interceptor-ref name="defaultStack"/>
+			</interceptor-stack>
+			 
+		</interceptors>
+		
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		<global-results>
+            <result name="unlogin">/template/relogin.jsp</result>
+        </global-results>
+		<action name="getProperty" class="getProperty" method="execute">
+			<result name="1010203">/template/property/transformer.jsp</result>
+			<result name="1030101">/template/property/default.jsp</result>
+			<result name="1010205">/template/property/branch_box.jsp</result>
+			<result name="1010201">/template/property/transformer_substation.jsp</result>
+			<result name="1010202">/template/property/switch_station.jsp</result>
+			<result name="1010204">/template/property/ringmainunit.jsp</result>
+			<result name="1020101">/template/property/well.jsp</result>
+			<result name="1020102">/template/property/tower.jsp</result>
+			<result name="1020103">/template/property/well.jsp</result><!-- 虚拟工井 -->
+			<result name="1010402">/template/property/cable_segment.jsp</result>
+			<result name="1010403">/template/property/wire_segment.jsp</result>
+			<result name="1010301">/template/property/cableline.jsp</result>
+			<result name="1020203">/template/property/virtualpipe.jsp</result>
+			<result name="1020211">/template/property/rack_pipe.jsp</result>
+			<result name="1020212">/template/property/bridge.jsp</result>
+			<result name="1020213">/template/property/channel.jsp</result>
+			<result name="1020214">/template/property/buried.jsp</result>
+			<result name="1020215">/template/property/tunnel.jsp</result>
+			<result name="1020216">/template/property/jacking.jsp</result>
+			<result name="1010502">/template/property/pipehole.jsp</result>
+			<result name="1010501">/template/property/profile.jsp</result>
+			<result name="1010601">/template/property/intermission.jsp</result>
+			<result name="1020301">/template/property/road.jsp</result>
+			<result name="1020200">/template/property/pipeline.jsp</result>
+			<result name="1010206">/template/property/branch.jsp</result>
+			<result name="1010208">/template/property/intermediatejoint.jsp</result>
+			<result name="1010207">/template/property/remainder.jsp</result>
+			<result name="1010503">/template/property/bracket.jsp</result>
+			<result name="error">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getPropertyJson" class="getPropertyJson" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getPropertiesJson" class="getPropertiesJson" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getProJsonOfCables" class="getProJsonOfCables" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getProJsonOfWireCables" class="getProJsonOfWireCables" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getProJsonConBuildofCableline" class="getProJsonConBuildofCableline" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getProJsonOfWireCableByTransStation" class="getProJsonOfWireCableByTransStation" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		<action name="getProfileCableHoleByWell" class="getProfileCableHoleByWell" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		<action name="getProOfWireCables" class="getProOfWireCables" method="execute">
+			<result name="success">/template/property/holes.jsp</result>
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getWireOfProfile" class="getWireOfProfile" method="execute">
+			<result name="success">/template/property/wire_to_hole.jsp</result>
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getSearchInfo" class="getSearchInfo" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getSearchIntInfo" class="getSearchIntInfo" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getSearchPLInfo" class="getSearchPLInfo" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getSearchPPInfo" class="getSearchPPInfo" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getSearchBuilding" class="getSearchBuilding" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getSearchBuildingHost" class="getSearchBuildingHost" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>		
+		<action name="deleteHole" class="deleteHole" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		<action name="getSearchContainer" class="getSearchContainer" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getSearchWirecable" class="getSearchWirecable" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="loginCheck"></interceptor-ref>
+		</action>
+		
+		<action name="getSearchRoad" class="getSearchRoad" method="execute">
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="getAttachment" class="getAttachment" method="execute">
+			<result name="success">/template/property/attachments.jsp</result>
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="saveProperty" class="saveProperty" method="execute">
+			<result name="success">/template/common/success.jsp</result>
+			<result name="error">/template/common/error.jsp</result>
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="topipe" class="topipe" method="execute">
+			<result name="success">/template/common/success.jsp</result>
+			<result name="error">/template/common/error.jsp</result>
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="updatePro" class="updatePro" method="execute">
+			<result name="success">/template/common/success.jsp</result>
+			<result name="error">/template/common/error.jsp</result>
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="uploadsPhotos" class="uploadsPhotos" method="execute">
+			<result name="success">/template/common/success.jsp</result>
+			<result name="error">/template/common/error.jsp</result>
+			<result name="input">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="saveProperties" class="saveProperties" method="execute">
+			<result name="success">/template/common/success.jsp</result>
+			<result name="error">/template/common/error.jsp</result>
+		</action>
+		
+		<action name="delete" class="delete" method="execute">
+			<result name="success">/template/common/success.jsp</result>
+			<result name="error">/template/common/error.jsp</result>
+		</action>
+		
+		
+		<action name="editProfile" class="editProfile" method="execute">
+			<result name="success">/template/property/edit.jsp</result>
+			<result name="error">/template/common/error.jsp</result>
+		</action>
+	
+	</package>
+	<!-- 
+	<action name="well3D" class="well3D" method="execute">
+			<result name="success">/3D/3d.jsp</result>
+		</action>
+	<package name="propertyJson" extends="json-default">
+	
+		<action name="getPropertyJson" class="getPropertyJson" method="execute">
+			<result name="success" type="json">
+				<param name="root">jsonResult</param>
+			</result>
+		</action>	
+	</package>
+	-->
+	<!-- 系统功能配置 -->
+	<package name="system" extends="struts-default">
+
+		<interceptors>
+			<interceptor name="loginCheck" class="loginCheck">
+			</interceptor>
+		</interceptors>
+		<global-results>
+            <result name="unlogin">/template/relogin.jsp</result>
+        </global-results>
+        <action name="home" class="home" method="execute">
+			<result name="success">/template/home.jsp</result>
+			<result name="unlogin">/template/login.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginCheck" />
+		</action>
+		<action name="login" class="login" method="execute">
+			<result name="login">/template/login.jsp</result>
+			<result name="loginout">/template/loginout.jsp</result>
+			<result name="success"  type="redirectAction">home</result>
+			<result name="input">/template/login.jsp</result>
+		</action>
+		<action name="getSystemPage" class="getSystemPage" method="execute">
+			<result name="uploadsXML">/template/system/uploadsXML.jsp</result>
+			<result name="addUser">/template/system/addUser.jsp</result>
+			<result name="userManager">/template/system/userManager.jsp</result>
+			<result name="editPsd">/template/system/editPsd.jsp</result>
+			<result name="error">/wrong.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginCheck" />
+		</action>
+		
+		<action name="uploadsExcel" class="uploadsExcel" method="execute">
+			<result name="success">/template/system/importSuccess.jsp</result>
+			<result name="error">/wrong.jsp</result>
+			<result name="input">/wrong.jsp</result>
+			<!-- 
+			<result name="wait">/template/system/importWaiting.jsp</result>
+			-->
+			<result name="invalid.token">/template/system/repeat.jsp</result>
+			<interceptor-ref name="defaultStack" /> 
+			<interceptor-ref name="token" />
+			<!-- 
+			<interceptor-ref name="execAndWait">
+            	<param name="delay">0</param>
+            	 <param name="delaySleepInterval">2000</param>   
+            	
+        	</interceptor-ref>
+        	-->
+			
+			<interceptor-ref name="loginCheck" />
+			
+		
+		</action>
+		
+		<action name="getUser" class="getUser" method="execute">
+			<result name="success">/template/system/userinfo.jsp</result>
+			<result name="error">/wrong.jsp</result>
+			<result name="input">/wrong.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginCheck" />
+		</action>
+		
+		<action name="addUser" class="addUser" method="execute">
+			<result name="success">/template/system/success.jsp</result>
+			<result name="ok">/template/common/success.jsp</result>
+			<result name="inputpsd">/template/system/editPsd.jsp</result>
+			<result name="error">/wrong.jsp</result>
+			<result name="input">/wrong.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginCheck" />
+		</action>
+	</package>
+	
+</struts>
